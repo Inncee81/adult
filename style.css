@@ -1,0 +1,134 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	overflow-x:hidden;
+	font-family: 'Oswald', sans-serif;
+	color:#FFFFFF;
+	height:100%;
+	text-transform:uppercase;
+}
+
+.head {
+	z-index:1;
+	background-image:url(../img/bg_pattern.jpg);
+	background-repeat:repeat-x;
+	height:120px;
+	width:100%;
+	margin:0;
+	outline-color:#000000;
+	outline-style:dashed;
+	outline-width:thin;
+	position:fixed;
+}
+
+#background {
+	position:fixed;
+    top:60%;
+    left:50%;
+    min-width:100%;
+    min-height:100%;
+    width:auto;
+    height:auto;
+    z-index:-1;
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    transform:translateX(-50%) translateY(-50%);
+    background:url(../vid/screenshot.jpg) no-repeat;
+    background-size:cover;
+}
+
+h1 {
+	color:#FFFFFF;
+}
+
+.account {
+	margin-top:20px;
+}
+
+a:link.headlink {
+	text-decoration: underline; color: white;
+}
+
+a:visited.headlink {
+	text-decoration: underline; color: white;
+}
+
+a:active.headlink {
+	text-decoration: underline; color: #3d9beb;
+}
+a:hover.headlink {
+	text-decoration: underline; color: #3d9beb;
+}
+
+
+.glyphicon {
+	color:#3d9beb;
+}
+
+sup {
+	top:-0.2em;
+}
+
+.footer {
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.owl-carousel {
+	padding:10px;
+}
+
+.btn {
+	width:100%;
+	font-size:22px;
+}
+
+.box {
+	max-width:320px;
+	background-color:rgba(20,20,20,0.9);
+	height:auto;
+	padding:10px;
+	margin-top:150px;
+	border: 2px solid #111;
+	z-index:999;
+	border-radius:5px;
+	text-shadow:0 2px 0 rgba(0, 0, 0, 0.75);
+	box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5), 0 5px 5px -5px rgba(0, 0, 0, 1);
+}
+
+.showmobile {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .showmobile {
+		display:block;
+	}
+	
+	.hidemobile {
+		display:none;
+	}
+}
+
+@media only screen and (max-width: 433px) {
+    h1 {
+		font-size:22px;
+		margin-top:35px;
+	}
+}
+
+@media only screen and (max-width: 552px) {
+    .account {
+		margin-top:35px;
+	}
+}
+
+@media only screen and (max-width: 385px) {
+    .account {
+		margin-top:28px;
+	}
+}
